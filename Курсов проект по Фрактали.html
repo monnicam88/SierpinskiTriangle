@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8" />
+        <title> • Триъгълник на Сиерпински • </title>
+        <link rel = "icon" href = "Икона на прозореца на браузъра.png">
+       
+        <link rel = "stylesheet" type = "text/css" href = "styles.css">
+    </head>
+
+    <body>
+        <!-- ЗАГЛАВИЕ И ПОДЗАГЛАВИЕ НА ПРОЕКТА -->
+	    <h2>• ТРИЪГЪЛНИК НА СЕРПИНСКИ •</h2>
+	    <h4><i>Курсов проект за избираема дисциплина "<b>Фрактали</b>", 
+               летен семестър 2021/2022</i></h4>
+
+        <div class = "section">
+            <div class = "left-side"> 
+                <canvas id = "sierpinskiCanvas" width = "600" height = "470">
+                Този браузър не поддържа HTML5 canvas tag.</canvas>
+
+                <div class = "optionsMenu">
+                    <ul>
+                        <li><input type = "button" value = "Пусни анимацията" 
+                             id = "startAnimation" onclick = "startAnimation()"></li>
+                        <li><input type = "button" value = "Спри анимацията" 
+                             id = "stopAnimation" onclick = "stopAnimation()"></li>
+                        <li><b>Избери цвят: </b>
+                            <input type = "color" id = "myColor" value = "#F8F8FE" 
+                             oninput = "changeColor()">
+                        </li>
+                    </ul>
+                    
+                    <p>Дълбочина на рекурсията = <b><span id="rangeText"></span></b>
+                        <input type = "range" min = "1" max = "7" value = "4" 
+                         id = "myRange" oninput = "updateConfiguration()">
+                    </p>
+                </div>
+            </div>
+
+            <div class = "right-side">
+                <img src = "logo.png" id = "img_link">
+                
+                <div class = "faculty">
+                    <h5>Софийски университет "Св. Климент Охридски"</h5>
+                    <h5 id = "label">Факултет по математика и информатика</h5>
+                </div>
+                <br>    
+
+                <h3 id = "title">За триъгълникът на Серпински</h3>
+            
+                <p><em>Триъгълникът на Серпински</em>, наричан още и <em>Решето на Серпински</em>, 
+                    е <em>фрактал</em> <b>с формата на равностранен триъгълник</b>, 
+                    рекурсивно разделен на по-малки равностранни триъгълници с дължина на страната, 
+                    съответно <b>1/2, 1/4, 1/8, … 1/2ⁿ (n → ∞)</b> от дължината на външния триъгълник. 
+                    Триъгълникът на Серпински е един от най-простите примери за <em>самоподобни множества</em>, 
+                    тъй като е математически генериран модел, който може да се самовъзпроизведе при 
+                    произволно увеличаване или намаляване на мащаба. <b>Наречен е на името на полския 
+                    математик <em>Вацлав Серпински</em>.</b>
+                </p>
+
+                <h3 id = "title">Инструкции</h3>
+                    <ul>
+                <li><b>Бутонът</b> <em>Пусни анимацията</em> - стартира анимацията на триъгълника.</li>
+                <li><b>Бутонът</b> <em>Спри анимацията</em> - спира анимацията на триъгълника.</li>
+                <li><b>Бутонът</b> <em>Избери цвят</em> - позволява да се избере произволен цвят на триъгълника.</li>
+                <li><b>Дълбочина на рекурсията</b> - показва степента на вложеност на триъгълниците.</li>
+                    </ul>
+            </div>
+            
+            <script type = "text/javascript" src = "sierpinski.js"></script>
+            <script type = "text/javascript" src = "main.js"></script>
+            
+            <!-- ИНФОРМАЦИЯ ЗА АВТОРА НА ПРОЕКТА -->
+            <h4><i><b>Изготвен от:</b> Моника Красимирова Митрева №62522, Софтуерно инженерство</i></h4>
+        </div>
+    </body>
+</html>
+

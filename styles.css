@@ -1,0 +1,143 @@
+body {
+    width: 1100px;
+    margin: auto; 
+    background-color: #F8F8FE;
+
+    text-align: center;
+    font-family: Franklin Gothic Book;
+    color:  #32329A;
+}
+
+.left-side {
+    float: left;			
+    margin: 0 10px 0 0;
+    width: 600px;
+}
+
+.right-side {
+    text-align: justify;
+    padding-left: 20px;
+    float: left;
+    width: 340px;
+}
+
+.optionsMenu {
+    margin-bottom: 5px;
+}
+
+.optionsMenu ul {
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.optionsMenu ul li {
+    height: 40px;			
+    margin-right: 0px;
+    display: inline-block;
+    width: 150px;
+}
+
+.optionsMenu ul li input {
+    height: 35px;
+}
+
+#title {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 0;
+    margin-top: 5px;
+
+    font-size: 3.5em;
+    font-family: Candara;
+    text-shadow: 1px 2px 3px #9595CC; 
+    color: #000081;	
+}
+
+h3 {
+    border-bottom: 1.5px dotted #000081;
+    color: #262696;			
+}
+
+h4 {
+    margin: 0 0 1em 0;
+    font-weight: lighter;
+}
+
+h5 {
+    text-align: center;
+    font-weight: lighter;
+    margin: 0;
+    font-style: italic;
+}
+
+#startAnimation {
+    margin-top: 10px;
+    padding: 5px 10px;
+    position: relative;
+    cursor: pointer;
+    
+    border-radius: 6px;
+    border: 2px solid #6363B3;
+    background-color: #6363B3;
+    
+    font-family: Franklin Gothic Book;
+    font-weight: bolder;
+    font-size: 14px;
+    color: #F8F8FE;
+}
+
+#stopAnimation {
+    margin-top: 10px;
+    padding: 5px 10px;
+    position: relative;
+    cursor: pointer;
+    
+    border-radius: 6px;
+    border: 2px solid #6363B3;
+    background-color: #6363B3;
+    
+    font-family: Franklin Gothic Book;
+    font-weight: bolder;
+    font-size: 14px;
+    color: #F8F8FE;
+}
+
+#myColor {
+    margin-top: 10px;
+    padding: 1px 1px;
+    position: relative;
+    cursor: pointer;
+    
+    border-radius: 6px;
+    border: 2px solid #6363B3;
+    background-color: #6363B3;
+}
+
+div.section {
+    margin: 0 0 0 0;
+    padding: 1em 3em 0em 3em;
+    background: #C6C6E5;
+
+    border: solid 3px #000081;
+    border-radius: 25px;
+    box-shadow: 0 0 1em #9595CC; 
+}
+
+div.faculty {
+    padding-top: 18px;
+}
+
+em {
+    text-shadow: 0 0 4px #6363B3;
+
+    font-weight: bolder;
+    font-style: italic;
+    color: #F8F8FE;
+}
+
+#img_link {
+    width: 60px;
+    float: right;
+}
